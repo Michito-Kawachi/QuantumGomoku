@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>QuantumGomoku</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <div id="infoArea" style="text-align: center; font-size: 32px; margin-top: 100px;">
+            次の手：90%●
+        </div>
+        <div style="text-align: center; margin-top: 5px; margin-bottom: 5px;">
+            <div id="observeLeft" style="font-size: 28px;">
+                残り観測回数 （黒：5回 / 白：5回）
+                <button class="button" id="observeButton">
+                    観測
+                </button>
+            </div>
+        </div>
+        <!--JS側で内容消去して自動生成するから、何書いといてもいい-->
+        <div class="board-wrapper">
+            <div>
+                <table class="table" id="quantumTable"></table>
+            </div>
+            <div>
+                <table class="table" id="observeTable"></table>
+            </div>
+        </div>
+        <!-- <table class="table" id="boardTable">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table> -->
+        <div style="text-align: center; margin-top: 10px;">
+            <button class="button" onclick="location.reload()">もう一度</button>
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+</html>

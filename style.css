@@ -1,0 +1,60 @@
+/* 横並び */
+.board-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /* margin-top: 100vh; */
+}
+
+.table {
+    /* position:absolute;
+    top: 50%;
+    left: 45%;
+    margin-top: -257px;
+    margin-left: -257px; */
+    margin: auto;
+}
+
+.table td {
+    width: 60px;
+    height: 60px;
+    aspect-ratio: 1/1;
+    background-color: #ddd;
+    text-align: center;
+    vertical-align: middle;
+    /* font-size:  3.8vw; */
+    /* cursor: pointer; */
+}
+
+.list {
+    max-width: 750px;
+    margin: 0 auto;
+    list-style: none;
+    background-color: #fff;
+    padding: 0;
+}
+
+.list-item {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid #ddd;
+}
+.list-item > * {
+    width: 50px;
+    padding: 5px 10px;
+    text-align: center;
+}
+.list-item *:last-child {
+    flex-grow: 1;
+}
+
+.button {
+    font-size: 28px;
+    padding: 10px, 20px;
+    border: none;
+    background-color: #34afe9;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
